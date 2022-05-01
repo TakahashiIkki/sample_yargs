@@ -8,10 +8,10 @@ RUN apk add tzdata
 STOPSIGNAL SIGTERM
 WORKDIR /usr/src/app
 
-COPY package.json yarn.lock ./
+COPY package.json package-lock.json ./
 
-RUN yarn install -–production=false
+RUN npm ci --production=false
 
 COPY . .
 
-RUN yarn build
+RUN npm run build
