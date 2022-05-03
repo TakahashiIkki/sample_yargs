@@ -14,7 +14,9 @@
   "license": "MIT",
   "dependencies": {
     "@types/node": "^17.0.30",
+    "aws-sdk": "^2.1126.0",
     "dotenv": "^16.0.0",
+    "sqs-consumer": "^5.7.0",
     "ts-loader": "^9.2.9",
     "typescript": "^4.6.4",
     "webpack": "^5.72.0",
