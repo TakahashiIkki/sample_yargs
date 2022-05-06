@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
 
-RUN npm ci --production=false
+RUN npm ci
 
 COPY . .
 
